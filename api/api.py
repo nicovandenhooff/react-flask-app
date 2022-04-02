@@ -9,8 +9,3 @@ CORS(app)
 @cross_origin()
 def get_current_time():
     return {'time': time.time()}
-
-# @app.route('/')
-# @cross_origin()
-# def index():
-#     return app.send_static_file('index.html')
