@@ -20,9 +20,9 @@ jobs:
           heroku_app_name: ${{secrets.HEROKU_APP}}
           heroku_email: ${{secrets.HEROKU_EMAIL}}
           appdir: "api"
-  deploy_frontend:
+  deploy-frontend:
     # only run if backend deploys successfully
-    needs: deploy-backend   
+    needs: deploy-backend
     runs-on: ubuntu-latest
     steps:
       - name: checkout-deployment-branch
