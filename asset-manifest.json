@@ -1,16 +1,15 @@
 {
   "files": {
     "main.css": "/react-flask-app/static/css/main.073c9b0a.css",
-    "main.js": "/react-flask-app/static/js/main.34972c0f.js",
+    "main.js": "/react-flask-app/static/js/main.10dd6673.js",
     "static/js/787.4a9ac955.chunk.js": "/react-flask-app/static/js/787.4a9ac955.chunk.js",
-    "static/media/logo.svg": "/react-flask-app/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/react-flask-app/index.html",
     "main.073c9b0a.css.map": "/react-flask-app/static/css/main.073c9b0a.css.map",
-    "main.34972c0f.js.map": "/react-flask-app/static/js/main.34972c0f.js.map",
+    "main.10dd6673.js.map": "/react-flask-app/static/js/main.10dd6673.js.map",
     "787.4a9ac955.chunk.js.map": "/react-flask-app/static/js/787.4a9ac955.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.34972c0f.js"
+    "static/js/main.10dd6673.js"
   ]
 }
