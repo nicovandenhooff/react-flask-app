@@ -1,0 +1,32 @@
+name: cd
+
+on:
+  # trigger on push to deployment branch
+  push:
+    branches: [ deployment ]
+  # trigger manually
+  workflow_dispatch:
+
+jobs:
+  deploy-backend:
+    runs-on: ubuntu-latest
+    steps:
+      # checkout deployment branch
+      - uses: actions/checkout@v3
+        with:
+          ref: deployment
+      # heroku deployment
+      - uses: AkhileshNS/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: ${{secrets.HEROKU_APP}}
+          heroku_email: ${{secrets.HEROKU_EMAIL}}
+          appdir: "api"
+        
+      
+
+      
+      
+      
+#       - uses: actions/setup-node@v3
+#       - uses: actions/setup-python@v2
